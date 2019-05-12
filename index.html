@@ -3,31 +3,34 @@
 <head>
 <title>HOME</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3pro.css">
 <style>
-* { color: rgb(255,255,255); text-decoration: none; padding: 0; margin: 0; font-family: "Roboto", Open Sans, sans-serif;}
+* { color: rgb(0,0,0); text-decoration: none; padding: 0; margin: 0; font-family: "Roboto", Open Sans, sans-serif;}
 body, html { height: 100vh;}
-h1 {font-size: 8	vw; padding: 0; margin: 0;} h2 {font-size: 6vw; padding: 0; margin: 0;} h3 {font-size: 4.5vw; padding: 0; margin: 0;}h4 {font-size: 3vw; padding: 0; margin: 0;} h5 {font-size: 2vw; padding: 0; margin: 0;} h6 {font-size: 1.5vw; padding: 0; margin: 0;} p {font-size: 1vw; padding: 0; margin: 0;}
+h1 {font-size: 8vw; padding: 0; margin: 0;} h2 {font-size: 6vw; padding: 0; margin: 0;} h3 {font-size: 4.5vw; padding: 0; margin: 0;}h4 {font-size: 3vw; padding: 0; margin: 0;} h5 {font-size: 2vw; padding: 0; margin: 0;} h6 {font-size: 100%; padding: 0; margin: 0;} p {font-size: 1vw; padding: 0; margin: 0;}
 .bg { background-image: url("bg/bg_a.jpg"); height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover; }
-.w3-block, .w3-container, .w3-dropdown-click, .w3-btn {position: absolute; height: 10vh;}
+.w3-block, .w3-container, .w3-dropdown-click, .w3-btn {position: absolute;}
+.cA {left: 0; width: 25vw; height: 10vh;}
 </style>
 </head>
 <body>
 <div class="bg"></div>
 
-<div class="w3-container" style="bottom: 0vw;">
+<h1>WELCOME TO PRAGUE</h1>
+<h2>WELCOME TO PRAGUE</h2>
+<h3>WELCOME TO PRAGUE</h3>
+<h4>WELCOME TO PRAGUE</h4>
+<h5>WELCOME TO PRAGUE</h5>
+<h6>WELCOME TO PRAGUE</h6>
+<p>WELCOME TO PRAGUE</p>
 
-  <div class="w3-container" style="bottom: 0vw; left: 0vw;">
-    <div class="w3-dropdown-click">
-      <button onclick="dropdown_A()" class="w3-block w3-purple" style="width: 20vw; "><h6>WELCOME TO PRAGUE</h6></button>
-      <div id="Demo_A" class="w3-dropdown-content w3-bar-block w3-border">
-        <button href="#" class="w3-bar-item w3-btn w3-deep-purple" style="bottom: 0vw; width: 20vw">History of Prague</button>
-        <button href="#" class="w3-bar-item w3-btn w3-indigo" style="bottom: 5vw; width: 20vw">Prague today</button>
-        <button href="#" class="w3-bar-item w3-btn w3-blue" style="bottom: 10vw; width: 20vw">Our services</button>
-	  </div>
-    </div>
-  </div>
-  
+<button onclick="dropdown_A()" class="w3-btn w3-purple cA" style="bottom: 0vw;"><h6>WELCOME TO PRAGUE</h6></button>
+<div id="Demo_A" class="w3-dropdown-content w3-bar-block cA" style="bottom:10vh;">
+  <button href="#" class="w3-btn w3-deep-purple cA" style="bottom: 20vh;">History of Prague</button>
+  <button href="#" class="w3-btn w3-indigo cA" style="bottom: 10vh">Prague today</button>
+  <button href="#" class="w3-btn w3-blue cA" style="bottom: 0vh">Our services</button>
+</div>
+
   <div class="w3-container" style="bottom: 0vw; left: 25vw;">
     <div class="w3-dropdown-click">
       <button onclick="dropdown_B()" class="w3-block w3-light-blue" style="width: 20vw; ">STAY WITH US</button>
