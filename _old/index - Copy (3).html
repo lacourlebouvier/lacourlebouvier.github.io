@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3pro.css">
+<style>
+* { color: rgb(0,0,0); text-decoration: none; padding: 0; margin: 0; font-family: "Roboto", Open Sans, sans-serif;}
+body, html { height: 100vh;}
+.bg { background-image: url("bg/bg_a.jpg"); height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover; }
+.w3-button {position: absolute;}
+.cA {left: 0; width: 25vw; height: 10vh}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<button onclick="dropdown_A()" class="w3-button cA" style="bottom: 0vw;">WELCOME TO PRAGUE</button>
+<div id="Demo_A" class="w3-dropdown-content cA" style="bottom:10vh;">
+  <button class="w3-button cA" style="bottom: 20vh;">History of Prague</button>
+  <button class="w3-button cA" style="bottom: 10vh">Prague today</button>
+  <button class="w3-button cA" style="bottom: 0vh">Our services</button>
+</div>
+
+<script>
+function dropdown_A() {
+  var x = document.getElementById("Demo_A");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
